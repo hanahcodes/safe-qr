@@ -1,0 +1,11 @@
+# For the backend server
+fastapi
+uvicorn[standard]
+sqlalchemy
+databases[sqlite]
+
+# For the generator & verifier
+requests
+qrcode[pil]
+pyzbar
+python-decouple  # For reading image file paths easily in the verifier
