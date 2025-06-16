@@ -8,4 +8,10 @@ databases[sqlite]
 requests
 qrcode[pil]
 pyzbar
-python-decouple  # For reading image file paths easily in the verifier
+python-decouple
+
+# --- Phase 2 Additions ---
+numpy
+opencv-python
+scikit-image
+python-multipart # Required by FastAPI for file uploads
