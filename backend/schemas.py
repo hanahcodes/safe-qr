@@ -10,8 +10,11 @@ class Product(BaseModel):
     unique_id: str
     product_name: str
     company_name: str
+    # --- PHASE 2 ADDITION ---
+    master_pattern_path: Optional[str] = None
 
 class VerificationResponse(BaseModel):
     status: str
     message: str
+    similarity_score: Optional[float] = None
     product_data: Optional[Product] = None
